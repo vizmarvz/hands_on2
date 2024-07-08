@@ -95,82 +95,87 @@ Animation Cards
 7. File Structure to follow below.
 
 ```
-WD-Hands-On-2
-└─ Pages
-|   └─ Card_Gallery
-|       |      └─ Assets
-|       |      └─ Img
-|       |      |    └─ BMO.gif
-|       |      |    └─ GOLB.gif
-|       |      |    └─ GUNTER.gif
-|       |      |    └─ HUNSON HABADEER.gif
-|       |      |    └─ ICE PRINCE.gif
-|       |      |    └─ LEMON PRINCE.gif
-|       |      |    └─ LITCH.gif
-|       |      |    └─ MARCELINE.gif
-|       |      |    └─ PEPPERMINT BUTTLER.gif
-|       |      └─ Js
-|       |      └─ style.css
+hands_on2
+|       |      
+|       └─ assets
+|       |      └─ css
+|       |      |   └─ style.css
+|       |      |       
+|       |      └─ img
+|       |      |   └─ bmo-icon.png
+|       |      |   └─ home-bg.jpg
+|       |      |   
+|       |      └─js
+|       |          
+|       └─ card-gallery
+|       |      └─ css
+|       |      |   └─ style.css    
+|       |      └─ img
+|       |      |   └─ cg-bg.jpg
+|       |      |   └─ faj-icon.gif
+|       |      |   └─ flame-princess.gif
+|       |      |   └─ ICE KING.gif
+|       |      |   └─ lsp-icon.gif
+|       |      |   └─ pbb.icon.gif
+|       |      └─ js
 |       |   
-|       └─ Card_Gallery.html
-└─ Hero-1
-|       └─ Assets
-|       └─ Img
-|       |   └─ ICE KING.gif
-|       |   └─ ICE-BG.jpg
-|       |   └─ Js
-|       |   └─ style.css
+|       └─ index.html
+|       
+└─ hero-1
+|       └─ css
+|       |   └─ style.css  
+|       └─ img
+|       |   └─ pbb-icon.gif
+|       |   └─ candy-kingdom.jpg
 |       |   
-|       └─ Hero-Gallery-1.html
-└─ Hero-1
-|       └─ Assets
-|       └─ Img
-|       |   └─ ICE KING.gif
-|       |   └─ ICE-BG.jpg
-|       |   └─ Js
-|       |   └─ style.css
+|       └─js
 |       |   
-|       └─ Hero-Gallery-1.html
-└─ Hero-2
-|       └─ Assets
-|       └─ Img
-|       |   └─ FLAME-PRINCESS.gif
-|       |   └─ FLAME-KINGDOM.jpg
-|       |   └─ Js
-|       |   └─ style.css
+|       └─ index.html
+|       
+└─ hero-2
+|       └─ css
+|       |   └─ style.css  
+|       └─ img
+|       |   └─ flame-bg.jpg
+|       |   └─ flame-princess.gif
 |       |   
-|       └─ Hero-Gallery-2.html
-└─ Hero-3
-|       └─ Assets
-|       └─ Img
-|       |   └─ PB-GIF.gif
-|       |   └─ CANDY-KINGDOM.jpg
-|       |   └─ Js
-|       |   └─ style.css
+|       └─js
 |       |   
-|       └─ Hero-Gallery-3.html
-└─ Hero-4
-|       └─ Assets
-|       └─ Img
-|       |   └─ LUMPY-SPACE.gif
-|       |   └─ LSP-GIF.jpg
-|       |   └─ Js
-|       |   └─ style.css
+|       └─ index.html
+| 
+└─ hero-3
+|       └─ css
+|       |   └─ style.css  
+|       └─ img
+|       |   └─ pbb-icon.gif
+|       |   └─ candy-kingdom.jpg
 |       |   
-|       └─ Hero-Gallery-4.html
-└─ Hero-5
-|       └─ Assets
-|       └─ Img
-|       |   └─ FAJ.gif
-|       |   └─ FAJ-HOUSE.jpg
-|       |   └─ Js
-|       |   └─ style.css
+|       └─js
 |       |   
-|       └─ Hero-Gallery-5.html
-└─ assets
-|       └─ Img
-|       |   └─ BG.jpg
-|       └─ Css
+|       └─ index.html
+|       
+└─ hero-4
+|       └─ assets
+|       |      └─ css
+|       |      |   └─ style.css
+|       |      |       
+|       |      └─ img
+|       |      |   └─ lsp-icon.gif
+|       |      |   └─ lumpy-kingdom.jpg
+|       |      |   
+|       |      └─js
+|       └─ index.html
+└─ hero-5
+|       └─ css
+|       |   └─ style.css  
+|       └─ img
+|       |   └─ faj-home.jpg
+|       |   └─ faj-icon.gif
+|       |   
+|       └─js
+|       |   
+|       └─ index.html
+| 
 └─ index.html
 └─ readme.md
 ```
