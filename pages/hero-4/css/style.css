@@ -1,0 +1,184 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #000;
+    background-image: url("/pages/hero-4/img/lumpy-kingdom-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header nav ul li {
+    margin: 0 10px;
+}
+
+.header nav ul a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header nav ul a:hover {
+    background-color: cyan;
+    color: black;
+}
+
+
+.logo {
+    width: 50px;
+    height: auto;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.5) rotate(720deg);
+    filter: brightness(1.5);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background-color: #0066cc;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: aq;
+    transform: scale(1.2) rotate(-5deg);
+}
+
+nav ul li a:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+nav ul li a:active {
+    transform: scale(0.9);
+}
+
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+
+.animated-container {
+    width: 45%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    order: 2;
+    margin-bottom: 60px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease;
+}
+
+.animated-container:hover {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+}
+
+.static-container {
+    width: 45%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    order: 1;
+    margin-top: 20px;
+}
+
+.static-container img, .animated-container img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.static-container .description,
+.animated-container .description {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.static-container .description h2,
+.animated-container .description h2 {
+    margin-bottom: 10px;
+}
+
+.static-container .description p,
+.animated-container .description p {
+    font-size: 14px;
+    line-height: 1.6;
+}
