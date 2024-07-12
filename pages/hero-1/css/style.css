@@ -127,7 +127,7 @@ nav ul li a:active {
     gap: 20px;
     padding-top: 50px;
     background-color: rgba(0, 0, 0, 0.7);
-    background-image: url("/pages/hero-1/img/ice-kingdom-bg.jpg");
+    background-image: url("../img/ice-kingdom-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

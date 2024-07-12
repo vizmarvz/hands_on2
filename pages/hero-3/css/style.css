@@ -8,7 +8,7 @@ body, html {
     background-color: #000;
     display: flex;
     flex-direction: column;
-    background-image: url("/pages/hero-3/img/candy-kingdom-bg.jpg");
+    background-image: url("../img/candy-kingdom-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

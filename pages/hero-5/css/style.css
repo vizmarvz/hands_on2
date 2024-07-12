@@ -6,7 +6,7 @@ body, html {
     font-family: Arial, sans-serif;
     color: white;
     background-color: #000;
-    background-image: url("/pages/hero-5/img/faj-home.jpg");
+    background-image: url("../img/faj-home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
