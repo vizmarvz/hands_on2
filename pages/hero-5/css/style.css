@@ -1,0 +1,165 @@
+:root {
+    --static-bg-color: rgba(0, 0, 0, 0.7); /* Default background color for static container */
+    --animated-bg-color: rgba(0, 0, 0, 0.7); /* Default background color for animated container */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #000;
+    background-image: url("../img/faj-home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header nav ul li {
+    margin: 0 10px;
+}
+
+.header nav ul a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header nav ul a:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.static-container, .animated-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 100px 0 100px 20px;
+    padding: 20px;
+    background-color: brown; /* Use variable for static container background */
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.animated-container {
+    background-color: green; /* Use variable for animated container background */
+    position: relative;
+}
+
+.static-description, .animated-description {
+    flex: 1;
+    text-align: center;
+}
+
+.static-description h2, .animated-description h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: black;
+}
+
+.visit-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: burlywood;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+    background-color: yellowgreen;
+}
+
+.animated-container:hover .animated-content, .animated-container:active .animated-content {
+    animation: slideIn 1s forwards;
+}
+
+.animated-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.animated-image, .animated-description {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.animated-container:hover .animated-image, .animated-container:active .animated-image,
+.animated-container:hover .animated-description, .animated-container:active .animated-description {
+    transform: translateX(10px);
+    opacity: 1;
+}
+
+.animated-image {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.animated-description {
+    transform: translateX(-100%);
+    opacity: 0;
+    text-align: center;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.static-image, .animated-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.static-description {
+    color: #d3d3d3; /* Light gray color for static container text */
+}
+
+.animated-description {
+    color: #e0e0e0; /* Slightly lighter gray color for animated container text */
+}
