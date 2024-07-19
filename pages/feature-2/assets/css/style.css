@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.background-1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+}
+.container:nth-child(1) {
+    background-color: gray;
+}
+
+.container:nth-child(2) {
+    background-color: burlywood;
+}
+
+.container:nth-child(3) {
+    background-color: gray;
+}
+
+.container {
+    display: inline-block;
+    width: 20%;
+    padding: 10px;
+    margin: 0 1%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: glow 1.5s infinite alternate;
+    height: 350px;
+    vertical-align: top;
+}
+
+.flipper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.front img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.back {
+    background-color: transparent;
+    transform: rotateY(180deg);
+}
+
+.container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.description {
+    padding: 20px;
+}
+
+.description h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+@keyframes glow {
+    100% {
+        box-shadow: 0 0 20px aqua;
+    }
+}
+
+
+.background-2 {
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sliding-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    animation: glow 1.5s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliding-container:hover {
+    transform: scale(1.1);
+}
+
+.sliding-container img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+    margin: auto;
+}
+
+.sliding-container:hover img {
+    transform: rotate(360deg);
+}
+
+#container4 {
+    background-color: aqua  ;
+}
+
+#container5 {
+    background-color: pink;
+}
+
+#container6 {
+    background-color: skyblue;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.sliding-container:hover .content {
+    transform: translateY(0);
+}
+
+@keyframes glow {
+    100% {
+        box-shadow: 0 0 20px aqua;
+    }
+}
+
+.background-3 {
+    background-color: blue;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center; /* Center text and content */
+}
+
+.appearing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px; /* Adjust spacing between containers */
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+    animation: glow 1.5s infinite alternate;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Reduced image size */
+    margin-bottom: 20px; /* Space between image and content */
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-3 {
+    width: 100%;
+    max-width: 400px; /* Ensure content width matches image */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.5s ease-in-out;
+    margin: 0 auto;
+    animation: glow 1.5s infinite alternate;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.content-3 h2, .content-3 p {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center text horizontally */
+}
+
+.content-3 p {
+    margin-top: 10px; /* Space between title and paragraph */
+}
+
+.content-3:hover {
+    transform: translateY(10px);
+    background-color: aqua;
+    color: white;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes glow {
+    100% {
+        box-shadow: 0 0 20px aqua;
+    }
+}
+
+.background-4 {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../img/bg2.jpg");
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 6rem 0;
+    width: 120%; /* Ensure the container spans the full width */
+    height: auto; /* Ensure the container spans the full height of the viewport */
+    box-sizing: border-box; /* Include padding in width and height calculations */
+}
+
+.weird-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Ensure containers fit within grid */
+    box-sizing: border-box;
+    text-align: center; /* Center align text */
+}
+
+.image-container {
+    width: 100%;
+    max-width: 300px; /* Ensure images fit within containers */
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-4 {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center; /* Center align text */
+    box-sizing: border-box;
+}
+
+.content-4 h2 {
+    margin-top: 0;
+}
+
+.content-4 p {
+    margin: 10px 0 0;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.content-4:hover {
+    transform: translateY(10px);
+    background-color: aqua;
+    color: white;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes glow {
+    100% {
+        box-shadow: 0 0 20px aqua;
+    }
+}
